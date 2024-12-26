@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    position: relative;
 }
 
 header {
@@ -35,8 +36,7 @@ section {
     padding: 1.5rem;
     background-color: #2c2f5a;
     border-radius: 8px;
-    width: 100%;
-    max-width: 800px;
+    width: 80%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -76,12 +76,6 @@ a:hover {
     transform: scale(1.05);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-
 label {
     margin-top: 1rem;
     font-weight: bold;
@@ -110,13 +104,19 @@ footer {
     font-size: 0.9rem;
     color: #707586;
     text-align: center;
-    width: 100%;
 }
 .form-container {
     background-color: #2c2f5a; /* Match your website's theme */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    max-width: 800px; /* Limit the width */
-    margin: 20px auto; /* Center the form */
+    width: 80%;
+}
+@media (max-width:700px) {
+    .form-container {
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
 }
