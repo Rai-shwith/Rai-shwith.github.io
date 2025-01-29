@@ -6,6 +6,7 @@ import ToggleDark from "./icons/ToggleDark";
 import ToggleLight from "./icons/ToggleLight";
 import { useTheme } from "../context/ThemeContext";
 import Telegram from "./icons/Telegram";
+import Whatsapp from "./icons/Whatsapp";
 
 const FloatingBar = () => {
 
@@ -59,8 +60,9 @@ const FloatingBar = () => {
             aria-label="X"
             data-state="closed"
             href=""
-            // TODO: Whatsapp icon
-          ></a>
+            >
+            <Whatsapp />
+          </a>
         </div>
         <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full w-[40px]">
           <a
