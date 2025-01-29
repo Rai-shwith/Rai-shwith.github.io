@@ -4,6 +4,7 @@ import Background from './components/Background';
 import FloatingBar from './components/FloatingBar';
 import Header from './components/Header';
 import About from './components/About';
+import Projects from './components/Projects';
 
 const App = () => {
 
@@ -16,6 +17,7 @@ const App = () => {
       <FloatingBar />
       <Header />
       <About />
+      <Projects />
     </Background>
     </>
   );

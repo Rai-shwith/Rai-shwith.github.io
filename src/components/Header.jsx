@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
       <div className="flex justify-between items-start my-8">
-        <div className="flex flex-col w-">
+        <div className="flex flex-col md:w-9/12">
           <div className="text-3xl sm:text-5xl font-bold">
             Hi, I'm Ashwith 👋
           </div>
@@ -16,11 +16,11 @@ const Header = () => {
             visually appealing.🤠
           </div>
         </div>
-        <div className="max-w-32 max-h-32 min-h-24 min-w-24 bg-red-400 rounded-full">
+        <div className="flex-none md:w-64 md:h-64 h-24 w-24 bg-red-400 rounded-full">
             <img
                 src="https://avatars.githubusercontent.com/u/147788165?v=4"
                 alt="Ashwith Rai"
-                className="rounded-full"
+                className="rounded-full w-full h-full object-contain"
             />
         </div>
       </div>
