@@ -10,7 +10,7 @@ body {
     background-color: #1b1f3b;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 2rem;
     position: relative;
 }
@@ -18,10 +18,11 @@ body {
 header {
     text-align: center;
     margin-bottom: 2rem;
+    align-self: center;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #00d9ff;
 }
 
@@ -32,12 +33,9 @@ h2 {
 }
 
 section {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background-color: #2c2f5a;
-    border-radius: 8px;
-    width: 80%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 p {
@@ -49,7 +47,8 @@ ul {
     margin-left: 2rem;
 }
 
-a, strong {
+a,
+strong {
     color: #00d9ff;
     text-decoration: none;
 }
@@ -69,6 +68,7 @@ a:hover {
     margin: 10px auto;
     width: fit-content;
     transition: background-color 0.3s, transform 0.2s;
+    margin-top: 1rem;
 }
 
 .btn:hover {
@@ -76,13 +76,54 @@ a:hover {
     transform: scale(1.05);
 }
 
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #707586;
+    text-align: center;
+    align-self: center;
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form {
+    align-self: center;
+    width: 90%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.group {
+    display: flex;
+    gap: 5px;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+
 label {
     margin-top: 1rem;
     font-weight: bold;
 }
 
-input, textarea {
-    padding: 0.75rem;
+input,
+textarea,
+select {
+    width: 50%;
+    padding: 0.725rem;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 0.5rem;
@@ -90,7 +131,8 @@ input, textarea {
     transition: border-color 0.3s;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     border-color: #00d9ff;
     outline: none;
 }
@@ -99,24 +141,61 @@ textarea {
     resize: vertical;
 }
 
-footer {
-    margin-top: 3rem;
-    font-size: 0.9rem;
-    color: #707586;
-    text-align: center;
-}
-.form-container {
-    background-color: #2c2f5a; /* Match your website's theme */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    width: 80%;
-}
 @media (max-width:700px) {
-    .form-container {
+    h1{
+        font-size: 2.5rem;
+    }
+
+    #contact-form {
         width: 100%;
     }
-    section{
-        width: 100%;
+
+    .group {
+        font-size: 0.75rem;
+    }
+
+    label {
+        margin-top: 0.75rem;
+    }
+
+    input,
+    textarea,
+    select {
+        padding: 0.25rem;
+        margin-top: 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+
+.spinner-container {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* The rotating circle */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #4CAF50;
+    border-left-color: #4CAF50;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
     }
 }
