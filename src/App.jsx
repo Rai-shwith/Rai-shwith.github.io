@@ -5,6 +5,7 @@ import FloatingBar from './components/FloatingBar';
 import Header from './components/Header';
 import About from './components/About';
 import Projects from './components/Projects';
+import ContactMe from './components/ContactMe';
 
 const App = () => {
 
@@ -18,6 +19,7 @@ const App = () => {
       <Header />
       <About />
       <Projects />
+      <ContactMe />
     </Background>
     </>
   );
