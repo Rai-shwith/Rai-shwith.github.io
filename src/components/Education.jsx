@@ -29,7 +29,8 @@ const Education = () => {
                     M S Ramaiah Institute of Technology Bengaluru
                   </h3>
                   <div className="text-xs sm:text-sm text-muted-foreground text-right flex-shrink-0">
-                    2023 - 2027
+                    <div className="">2023 - 2027</div>
+                    <div className="">9.6 CGPA</div>
                   </div>
                 </div>
                 <div className="font-sans text-xs text-muted-foreground">
@@ -62,7 +63,8 @@ const Education = () => {
                     Vivekananda Pre University College Puttur
                   </h3>
                   <div className="text-xs sm:text-sm text-muted-foreground text-right flex-shrink-0">
-                    2021 - 2023
+                    <div className="">2021 - 2023</div>
+                    <div className="">94.8 %</div>
                   </div>
                 </div>
                 <div className="font-sans text-xs text-muted-foreground">
@@ -96,7 +98,8 @@ const Education = () => {
                     Priyadarshini English Medium School Bettampady
                   </h3>
                   <div className="text-xs sm:text-sm text-muted-foreground text-right flex-shrink-0">
-                    2011 - 2021
+                  <div className="">2011 - 2021</div>
+                  <div className="">96.9 %</div>
                   </div>
                 </div>
                 <div className="font-sans text-xs text-muted-foreground">
