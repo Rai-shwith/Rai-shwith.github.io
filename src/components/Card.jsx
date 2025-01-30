@@ -22,8 +22,8 @@ const Card = ({ title, time, description, frameworks, link }) => {
           {description}
         </div>
         <div className="flex flex-wrap mt-2">
-          {frameworks.map((index,framework) => (
-            <div className="bg-secondary text-secondary-foreground font-semibold rounded-md px-2 py-1 text-xs mr-2 mb-2" key={index}>
+          {frameworks.map((framework) => (
+            <div className="bg-secondary text-secondary-foreground font-semibold rounded-md px-2 py-1 text-xs mr-2 mb-2" key={framework}>
               {framework}
             </div>
           ))}
