@@ -16,22 +16,24 @@ const Card = ({
 }) => {
   return (
     <div className="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border hover:shadow-lg min-w-64">
-      <div className="aspect-video w-full overflow-hidden">
+      <div className="aspect-video w-full overflow-hidden bg-red-300 rounded-lg">
         <video
           muted
           autoPlay
           loop
-          className="w-full h-full"
-          poster={thumbnailSrc}
+          className="w-full transition-all duration-300 ease-in-out hover:scale-105"
+          poster={`/thumbnail/${thumbnailSrc}`}
+          onMouseEnter={(e) => e.target.pause()}
+          onMouseLeave={(e) => e.target.play()}
         >
-          <source src={videoSrc} type="video/mp4" />
+          <source src={`/videos/${videoSrc}`} type="video/mp4" />
         </video>
       </div>
       <div className=" flex flex-col p-3">
         <div className="font-bold mt-1 text-lg">{title}</div>
         <div className="flex justify-start space-x-2">
           <ProjectStatus status={status} />
-        <div className="font-sans text-sm opacity-80">{time}</div>
+          <div className="font-sans text-sm opacity-80">{time}</div>
         </div>
         <div className="text-sm font-light max-w-full text-pretty text-muted-foreground">
           {description}
@@ -46,23 +48,33 @@ const Card = ({
             </div>
           ))}
         </div>
-        <div className=" flex w-full justify-start space-x-5">
-        <a href={website}
-          target="_blank"
-          rel="noopener">
-          <div className="rounded-md font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
-          <Internet />
-            <div className="">Website</div>
-          </div>
-        </a>
-        <a href={"https://github.com/Rai-shwith/"+github}
-          target="_blank"
-          rel="noopener">
-          <div className="rounded-md font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
-          < Github/>
-            <div className="">Github</div>
-          </div>
-        </a>
+        <div className=" flex w-full justify-start space-x-5 ">
+          {website && (
+            <a
+              href={
+                website.startsWith("https://")
+                  ? website
+                  : "https://ashwithrai.me/" + website
+              }
+              target="_blank"
+              rel="noopener"
+            >
+              <div className="rounded-md font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
+                <Internet />
+                <div className="">Website</div>
+              </div>
+            </a>
+          )}
+          <a
+            href={"https://github.com/Rai-shwith/" + github}
+            target="_blank"
+            rel="noopener"
+          >
+            <div className="rounded-md font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
+              <Github />
+              <div className="">Github</div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
