@@ -17,8 +17,8 @@ const Projects = () => {
           title={"Leet2Git"}
           time={"Aug 2024"}
           status={"In Progress"}
-          thumbnailSrc={"leet2git.png"}
-          videoSrc={""}
+          thumbnailSrc={"leet2git.jpg"}
+          videoSrc={"LeetCode.webm"}
           website={""}
           github={"LEET2GIT"}
           frameworks={[
@@ -43,7 +43,7 @@ const Projects = () => {
           time={"Oct 2024"}
           status={"Completed"}
           thumbnailSrc={"skycast.jpg"}
-          videoSrc={"skycast.mp4"}
+          videoSrc={"skycast.webm"}
           website={"https://skycast.ashwithrai.me"}
           github={"SkyCast"}
           frameworks={[
@@ -61,8 +61,8 @@ const Projects = () => {
           title={"Get My Attendance"}
           time={"Dec 2024"}
           status={"Completed"}
-          thumbnailSrc={"getMyAttendance.png"}
-          thumbnailLightSrc={"getMyAttendanceLight.png"}
+          thumbnailSrc={"getMyAttendance.jpg"}
+          thumbnailLightSrc={"getMyAttendanceLight.jpg"}
           videoSrc={""}
           website={""}
           github={"getMyAttendance"}
@@ -89,8 +89,8 @@ const Projects = () => {
           title={"Classly"}
           time={"Nov 2024"}
           status={"In Progress"}
-          thumbnailSrc={"classly.png"}
-          thumbnailLightSrc={"classlyLight.png"}
+          thumbnailSrc={"classly.jpg"}
+          thumbnailLightSrc={"classlyLight.jpg"}
           videoSrc={""}
           website={"get-my-attendance"}
           github={""}
@@ -119,8 +119,8 @@ const Projects = () => {
           title={"C++ Lab Codes"}
           time={"Oct 2024"}
           status={"Completed"}
-          thumbnailSrc={"cpp.png"}
-          videoSrc={""}
+          thumbnailSrc={"cpp.jpg"}
+          videoSrc={"cpp.webm"}
           website={"cpp"}
           github={"cpp"}
           frameworks={[
@@ -139,8 +139,8 @@ const Projects = () => {
           title={"Shopping Cart"}
           time={"Jul 2024"}
           status={"Completed"}
-          thumbnailSrc={"shopping.png"}
-          videoSrc={""}
+          thumbnailSrc={"shopping.jpg"}
+          videoSrc={"shopping.webm"}
           website={"FM-Challenge-Product-list-with-cart"}
           github={"FM-Challenge-Product-list-with-cart"}
           frameworks={[
@@ -158,9 +158,9 @@ const Projects = () => {
           title={"Student Ranker"}
           time={"Jul 2024"}
           status={"Completed"}
-          thumbnailSrc={"studentRankerAfter.png"}
-          thumbnailLightSrc={"studentRanker.png"}
-          videoSrc={""}
+          thumbnailSrc={"studentRankerAfter.jpg"}
+          thumbnailLightSrc={"studentRanker.jpg"}
+          videoSrc={"studentRanker.webm"}
           website={"Student-Ranker"}
           github={"Student-Ranker "}
           frameworks={["HTML", "CSS", "JavaScript"]}
@@ -172,8 +172,8 @@ const Projects = () => {
           title={"Age Calculator"}
           time={"Jul 2024"}
           status={"Completed"}
-          thumbnailSrc={"ageCalculator.png"}
-          videoSrc={""}
+          thumbnailSrc={"ageCalculator.jpg"}
+          videoSrc={"ageCalculator.webm"}
           website={"FM-Challenge-Age-calculator-app"}
           github={"FM-Challenge-Age-calculator-app"}
           frameworks={["HTML", "CSS", "JavaScript"]}
@@ -185,7 +185,7 @@ const Projects = () => {
           title={"Super Hero Web App"}
           time={"Jun 2024"}
           status={"Completed"}
-          thumbnailSrc={"hero.png"}
+          thumbnailSrc={"hero.jpg"}
           videoSrc={""}
           website={"https://heros.ashwithrai.me/"}
           github={"FastAPI-SuperHero"}
@@ -207,8 +207,8 @@ const Projects = () => {
           title={"Vegetable and Fruits Classifier"}
           time={"Jan 2025"}
           status={"Experimental"}
-          thumbnailSrc={"VegFruitAi.png"}
-          videoSrc={""}
+          thumbnailSrc={"VegFruitAi.jpg"}
+          videoSrc={"vegFruitAi.webm"}
           website={""}
           github={"VegFruitAI"}
           frameworks={[
@@ -227,7 +227,7 @@ const Projects = () => {
           title={"Leet Code Solutions"}
           time={"Nov 2024"}
           status={"Maintained"}
-          thumbnailSrc={"leetSolutions.png"}
+          thumbnailSrc={"leetSolutions.jpg"}
           videoSrc={""}
           website={""}
           github={"LeetSolutions"}
@@ -240,8 +240,8 @@ const Projects = () => {
           title={"TO-DO App"}
           time={"Nov 2024"}
           status={"Completed"}
-          thumbnailSrc={"todo.png"}
-          videoSrc={""}
+          thumbnailSrc={"todo.jpg"}
+          videoSrc={"todo.webm"}
           website={"TODO-REACT"}
           github={"TODO-REACT"}
           frameworks={["React","Tailwind CSS"]}
@@ -251,8 +251,8 @@ const Projects = () => {
           title={"Shell Codes using Python"}
           time={"Oct 2024"}
           status={"On Hold"}
-          thumbnailSrc={"shellpy.png"}
-          videoSrc={""}
+          thumbnailSrc={"shellpy.jpg"}
+          videoSrc={"shellpy.webm"}
           website={""}
           github={"shellpy"}
           frameworks={["Python","Shell Scripting"]}
@@ -262,7 +262,7 @@ const Projects = () => {
           title={"Web Development Skill Lab Codes"}
           time={"Aug 2024"}
           status={"Completed"}
-          thumbnailSrc={"hybridWebdev.png"}
+          thumbnailSrc={"hybridWebdev.jpg"}
           videoSrc={""}
           website={"Skill-Lab-Hybrid-Web-Dev"}
           github={"Skill-Lab-Hybrid-Web-Dev"}

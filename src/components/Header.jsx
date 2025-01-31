@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <div className="flex justify-between items-start my-8">
         <div className="flex flex-col md:w-9/12">
-          <div className="text-3xl sm:text-5xl font-bold">
+          <div className="text-3xl s m:text-5xl font-bold">
             Hi, I'm Ashwith 👋
           </div>
           <div className="md:text-xl">
@@ -13,7 +13,7 @@ const Header = () => {
             I specialize in web development and enjoy working with various
             technologies to bring ideas to life. My goal is to build
             applications that are not only functional but also user-friendly and
-            visually appealing.🤠
+            visually appealing.🤠 
           </div>
         </div>
         <div className="flex-none md:w-64 md:h-64 h-24 w-24 bg-red-400 rounded-full">
