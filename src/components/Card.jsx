@@ -1,11 +1,16 @@
 import React from "react";
+import Internet from "./internet";
+import Github from "./icons/Github";
+import ProjectStatus from "./ProjectStatus";
 
 const Card = ({
   title,
+  status,
   time,
   description,
   frameworks,
-  link,
+  website,
+  github,
   thumbnailSrc,
   videoSrc,
 }) => {
@@ -24,7 +29,10 @@ const Card = ({
       </div>
       <div className=" flex flex-col p-3">
         <div className="font-bold mt-1 text-lg">{title}</div>
+        <div className="flex justify-start space-x-2">
+          <ProjectStatus status={status} />
         <div className="font-sans text-sm opacity-80">{time}</div>
+        </div>
         <div className="text-sm font-light max-w-full text-pretty text-muted-foreground">
           {description}
         </div>
@@ -38,13 +46,24 @@ const Card = ({
             </div>
           ))}
         </div>
-        <a href={link}
+        <div className=" flex w-full justify-start space-x-5">
+        <a href={website}
           target="_blank"
           rel="noopener">
-          <div className="rounded-md font-semibold text-primary-foreground bg-primary/80 w-fit px-3 text-sm">
-            Website
+          <div className="rounded-md font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
+          <Internet />
+            <div className="">Website</div>
           </div>
         </a>
+        <a href={"https://github.com/Rai-shwith/"+github}
+          target="_blank"
+          rel="noopener">
+          <div className="rounded-md font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
+          < Github/>
+            <div className="">Github</div>
+          </div>
+        </a>
+        </div>
       </div>
     </div>
   );
