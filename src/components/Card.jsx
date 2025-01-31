@@ -2,6 +2,7 @@ import React from "react";
 import Internet from "./internet";
 import Github from "./icons/Github";
 import ProjectStatus from "./ProjectStatus";
+import { useTheme } from "../context/ThemeContext";
 
 const Card = ({
   title,
@@ -12,17 +13,26 @@ const Card = ({
   website,
   github,
   thumbnailSrc,
+  thumbnailLightSrc = null,
   videoSrc,
 }) => {
+  const { theme } = useTheme();
   return (
     <div className="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border hover:shadow-lg min-w-64">
-      <div className="aspect-video w-full overflow-hidden bg-red-300 rounded-lg">
+      <div className="aspect-video w-full overflow-hidden rounded-lg relative">
+      <div className="absolute top-0 left-0 w-full h-full bg-blue-500 bg-opacity-50 bg-blend-multiply"></div>
         <video
           muted
           autoPlay
           loop
-          className="w-full transition-all duration-300 ease-in-out hover:scale-105"
-          poster={`/thumbnail/${thumbnailSrc}`}
+          className="relative w-full transition-all duration-300 ease-in-out hover:scale-105"
+          poster={
+            thumbnailLightSrc
+              ? theme == "light"
+                ? `/thumbnail/${thumbnailLightSrc}`
+                : `/thumbnail/${thumbnailSrc}`
+              : `/thumbnail/${thumbnailSrc}`
+          }
           onMouseEnter={(e) => e.target.pause()}
           onMouseLeave={(e) => e.target.play()}
         >
@@ -59,7 +69,7 @@ const Card = ({
               target="_blank"
               rel="noopener"
             >
-              <div className="rounded-md font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
+              <div className="rounded-md hover:scale-105 transition-transform ease-in-out font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
                 <Internet />
                 <div className="">Website</div>
               </div>
@@ -70,7 +80,7 @@ const Card = ({
             target="_blank"
             rel="noopener"
           >
-            <div className="rounded-md font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
+            <div className="rounded-md hover:scale-105 transition-transform ease-in-out font-semibold text-primary-foreground bg-primary/80 w-fit px-2 py-1 text-sm flex h-fit space-x-2">
               <Github />
               <div className="">Github</div>
             </div>
