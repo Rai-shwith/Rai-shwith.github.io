@@ -7,6 +7,7 @@ import ToggleLight from "./icons/ToggleLight";
 import { useTheme } from "../context/ThemeContext";
 import Telegram from "./icons/Telegram";
 import Whatsapp from "./icons/Whatsapp";
+import Instagram from "./icons/Instagram";
 
 const FloatingBar = () => {
 
@@ -58,7 +59,7 @@ const FloatingBar = () => {
         <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full w-[40px]">
           <a
             className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
-            aria-label="X"
+            aria-label="Whatsapp"
             data-state="closed"
             href="https://wa.me/919380531460?text=Hey%20Ashwith%2C%20I%20came%20across%20your%20portfolio%20and%20would%20love%20to%20connect!"
             target="_blank"
@@ -69,12 +70,23 @@ const FloatingBar = () => {
         <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full w-[40px]">
           <a
             className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
-            aria-label="Youtube"
+            aria-label="Telegram"
             data-state="closed"
             href="https://t.me/raiashwith"
             target="_blank"
           >
             <Telegram />
+          </a>
+        </div>
+        <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full w-[40px]">
+          <a
+            className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground rounded-full size-12"
+            aria-label="Instagram"
+            data-state="closed"
+            href="https://www.instagram.com/ashwith_rai_0404/"
+            target="_blank"
+          >
+            <Instagram />
           </a>
         </div>
         <div
