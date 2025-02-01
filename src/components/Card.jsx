@@ -3,6 +3,7 @@ import Internet from "./internet";
 import Github from "./icons/Github";
 import ProjectStatus from "./ProjectStatus";
 import { useTheme } from "../context/ThemeContext";
+import Description from "./Description";
 
 const Card = ({
   title,
@@ -46,7 +47,8 @@ const Card = ({
           <div className="font-sans text-sm opacity-80">{time}</div>
         </div>
         <div className="text-sm font-light max-w-full text-pretty text-muted-foreground">
-          {description}
+          <Description description={description} />
+          {/* {description} */}
         </div>
         <div className="flex flex-wrap mt-2">
           {frameworks.map((framework) => (
