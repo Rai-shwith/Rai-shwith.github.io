@@ -271,7 +271,7 @@ const Projects = () => {
           time={"Aug 2024"}
           status={"Completed"}
           thumbnailSrc={"hybridWebdev.jpg"}
-          videoSrc={""}
+          videoSrc={"skillLab.webm"}
           website={"Skill-Lab-Hybrid-Web-Dev"}
           github={"Skill-Lab-Hybrid-Web-Dev"}
           frameworks={["HTML", "CSS", "JavaScript"]}
