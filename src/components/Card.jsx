@@ -2,8 +2,8 @@ import React from "react";
 import Internet from "./internet";
 import Github from "./icons/Github";
 import ProjectStatus from "./ProjectStatus";
-import { useTheme } from "../context/ThemeContext";
 import Description from "./Description";
+import VideoComponent from "./VideoComponent";
 
 const Card = ({
   title,
@@ -17,28 +17,11 @@ const Card = ({
   thumbnailLightSrc = null,
   videoSrc,
 }) => {
-  const { theme } = useTheme();
   return (
     <div className="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border hover:shadow-lg min-w-64">
       <div className="aspect-video w-full overflow-hidden rounded-lg relative">
       <div className="absolute top-0 left-0 w-full h-full bg-blue-500 bg-opacity-50 bg-blend-multiply"></div>
-        <video
-          muted
-          autoPlay
-          loop
-          className="relative w-full transition-all duration-300 ease-in-out hover:scale-105"
-          poster={
-            thumbnailLightSrc
-              ? theme == "light"
-                ? `/thumbnail/${thumbnailLightSrc}`
-                : `/thumbnail/${thumbnailSrc}`
-              : `/thumbnail/${thumbnailSrc}`
-          }
-          onMouseEnter={(e) => e.target.pause()}
-          onMouseLeave={(e) => e.target.play()}
-        >
-          <source src={`/videos/${videoSrc}`} type="video/mp4" />
-        </video>
+        <VideoComponent poster={thumbnailSrc} posterLight={thumbnailLightSrc} videoSrc={videoSrc} />
       </div>
       <div className=" flex flex-col p-3">
         <div className="font-bold mt-1 text-lg">{title}</div>
