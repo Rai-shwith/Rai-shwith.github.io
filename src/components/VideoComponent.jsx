@@ -31,6 +31,19 @@ const VideoComponent = ({ videoSrc, poster, posterLight }) => {
     };
   }, []);
 
+const handlePause = (e) => {
+    e.preventDefault();
+    if (videoRef.current) {
+        videoRef.current.pause();
+    }
+};
+
+const handlePlay = () => {
+    if (videoRef.current) {
+        videoRef.current.play();
+    }
+};
+
   return (
     <video
     ref={videoRef}
@@ -46,8 +59,10 @@ const VideoComponent = ({ videoSrc, poster, posterLight }) => {
           : `/thumbnail/${poster}`
         : `/thumbnail/${poster}`
     }
-    onMouseEnter={(e) => e.target.pause()}
-    onMouseLeave={(e) => e.target.play()}
+    onMouseEnter={handlePause}
+    onMouseLeave={handlePlay}
+    onTouchStart={handlePause}
+    onTouchEnd={handlePlay}
   >
     <source src={`/videos/${videoSrc}`} type="video/mp4" />
   </video>
