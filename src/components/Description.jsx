@@ -1,7 +1,7 @@
-const Description = ({ description }) => {
+const Description = ({ description,normalClassNames, specialClassName }) => {
   const parts = description.split(/(\*.*?\*)/g).map((part, index) =>
     part.startsWith("*") && part.endsWith("*") ? (
-      <span key={index} className="font-bold">
+      <span key={index} className={specialClassName}>
         {part.slice(1, -1)}
       </span>
     ) : (
@@ -10,7 +10,7 @@ const Description = ({ description }) => {
   );
 
   return (
-    <div className="text-sm font-light max-w-full text-pretty text-muted-foreground">
+    <div className={normalClassNames}>
       {parts}
     </div>
   );

@@ -30,7 +30,11 @@ const Card = ({
           <div className="font-sans text-sm opacity-80">{time}</div>
         </div>
         <div className="text-sm font-light max-w-full text-pretty text-muted-foreground">
-          <Description description={description} />
+          <Description 
+          description={description}
+          normalClassNames={"text-sm font-light max-w-full text-pretty text-muted-foreground"}
+          specialClassName={"font-bold"}
+          />
           {/* {description} */}
         </div>
         <div className="flex flex-wrap mt-2">
