@@ -29,7 +29,7 @@ const ContactMe = () => {
     });
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbz6l6m7VK8m8_fzna-TvZs5PYw-eXLFA3piXsH7XOlCprudS4e19uyD1DA973FYrFnC9w/exec",
+      "https://script.google.com/macros/s/AKfycbyfJXyzohJwq3MGdcZSuub4o3jXp6_pGMFwSybklEtv6FwoWo5GYm52D-apTv7tav5XRA/exec",
       {
         method: "POST",
         body: form,
