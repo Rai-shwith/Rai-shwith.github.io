@@ -58,7 +58,7 @@ const Projects = () => {
           status={"Completed"}
           thumbnailSrc={"skycast.jpg"}
           videoSrc={"skycast.webm"}
-          website={"https://skycast.ashwithrai.me"}
+          website={"https://ashwithrai.me/SkyCast/"}
           github={"SkyCast"}
           frameworks={[
             "HTML",
@@ -67,7 +67,6 @@ const Projects = () => {
             "Node.js ",
             "OpenweatherMap API",
             "Full Stack",
-            "On Render",
           ]}
           description={
             "SkyCast is a *Node.js weather app* ☁️ that provides *real-time weather updates* and *5-day forecasts* 🌦️. It automatically detects your *location* via *GPS* 📍 or *IP* and supports *manual searches* 🔍 for any city. Powered by the *OpenWeatherMap API* 🌍, SkyCast delivers *accurate weather data* in a *simple, user-friendly interface* 🎯."
