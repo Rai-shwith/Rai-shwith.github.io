@@ -33,9 +33,9 @@ const Education = () => {
                     <div className="">9.6 CGPA</div>
                   </div>
                 </div>
-                <div className="font-sans text-xs text-muted-foreground">
+                <p className="font-sans text-xs text-muted-foreground">
                   Bachelor's Degree of Electronics and Communication (ECE)
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -67,10 +67,10 @@ const Education = () => {
                     <div className="">94.8 %</div>
                   </div>
                 </div>
-                <div className="font-sans text-xs text-muted-foreground">
+                <p className="font-sans text-xs text-muted-foreground">
                 {/* Pre-University Education in PCMC (Physics, Chemistry, Mathematics, and Computer Science) */}
                 Pre-University Education 
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -102,9 +102,9 @@ const Education = () => {
                   <div className="">96.9 %</div>
                   </div>
                 </div>
-                <div className="font-sans text-xs text-muted-foreground">
+                <p className="font-sans text-xs text-muted-foreground">
                 Secondary Education
-                </div>
+                </p>
               </div>
             </div>
           </div>

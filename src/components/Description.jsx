@@ -10,9 +10,9 @@ const Description = ({ description,normalClassNames, specialClassName }) => {
   );
 
   return (
-    <div className={normalClassNames}>
+    <p className={normalClassNames}>
       {parts}
-    </div>
+    </p>
   );
 };
 
