@@ -4,13 +4,15 @@ import Github from "./icons/Github";
 import ProjectStatus from "./ProjectStatus";
 import Description from "./Description";
 import VideoComponent from "./VideoComponent";
+import TechStack from "./TechStack";
 
 const Card = ({
   title,
   status,
   time,
   description,
-  frameworks,
+  techStack,
+  tags,
   website,
   github,
   thumbnailSrc,
@@ -37,16 +39,7 @@ const Card = ({
           />
           {/* {description} */}
         </div>
-        <div className="flex flex-wrap mt-2">
-          {frameworks.map((framework) => (
-            <div
-              className="bg-secondary text-secondary-foreground font-semibold rounded-md px-2 py-1 text-xs mr-2 mb-2"
-              key={framework}
-            >
-              {framework}
-            </div>
-          ))}
-        </div>
+          <TechStack techStack={techStack} tags={tags} />
         <div className=" flex w-full justify-start space-x-5 ">
           {website && (
             <a
