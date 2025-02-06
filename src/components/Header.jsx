@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <div className="flex justify-between items-start my-8">
         <div className="flex flex-col md:w-9/12">
-          <h1 className="sm:text-5xl font-bold">
+          <h1 className="sm:text-7xl text-3xl font-bold">
             Hi, I'm Ashwith 👋
           </h1>
           <p className="md:text-xl">
