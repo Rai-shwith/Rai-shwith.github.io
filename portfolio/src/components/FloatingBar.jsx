@@ -4,14 +4,13 @@ import Home from "./icons/Home";
 import LinkedIn from "./icons/LinkedIn";
 import ToggleDark from "./icons/ToggleDark";
 import ToggleLight from "./icons/ToggleLight";
-import { useTheme } from "../context/ThemeContext";
 import Telegram from "./icons/Telegram";
 import Whatsapp from "./icons/Whatsapp";
+import { useTheme } from "@/context/ThemeContext";
 import Instagram from "./icons/Instagram";
 
 const FloatingBar = () => {
-
-  const {toggleTheme} = useTheme()
+  const {toggleTheme} = useTheme();
 
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-0 md:top-4 z-30 mx-auto mb-4 flex origin-bottom h-full max-h-14 ">

@@ -1,12 +1,11 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-import { createContext } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 const themeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
+  const [theme, setTheme] = useState(
+    typeof window !== "undefined" ? localStorage.getItem("theme") || "dark" : "dark"
+  );  
   useEffect(() => {
     const root = window.document.documentElement;
     if (theme == "dark") root.classList.add("dark");
@@ -15,7 +14,7 @@ export const ThemeProvider = ({ children }) => {
   }, [theme]);
 
   const toggleTheme = () => {
-    console.log("Theme toggle invoked")
+    console.log("Theme toggle invoked");
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   };
   return (

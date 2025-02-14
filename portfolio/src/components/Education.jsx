@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 const Education = () => {
   return (
     <div className="flex min-h-0 flex-col gap-y-3 relative">
-        <div className="w-2 h-3/5 top-1/4 bottom-1/4 bg-card-foreground absolute ml-5 "></div>
+      <div className="w-2 h-3/5 top-1/4 bottom-1/4 bg-card-foreground absolute ml-5 "></div>
       <h2 className="text-xl font-bold relative">Education</h2>
       <div className="flex flex-col space-y-5">
         <a
@@ -15,7 +16,9 @@ const Education = () => {
           <div className="rounded-lg bg-card text-card-foreground flex items-center ">
             <div className="flex-none">
               <span className="relative flex shrink-0 overflow-hidden rounded-full border-4 border-card-foreground size-12 m-auto bg-muted-background dark:bg-foreground">
-                <img
+                <Image
+                  width={48}
+                  height={48}
                   className="aspect-square h-full w-full object-contain"
                   alt=""
                   src="/Education/ramaiah.png"
@@ -49,7 +52,9 @@ const Education = () => {
           <div className="rounded-lg bg-card text-card-foreground flex items-center ">
             <div className="flex-none">
               <span className="relative flex shrink-0 overflow-hidden rounded-full border-4 border-card-foreground size-12 m-auto bg-muted-background dark:bg-foreground">
-                <img
+                <Image
+                  width={48}
+                  height={48}
                   className="aspect-square h-full w-full object-cover"
                   alt=""
                   src="/Education/vivek.png"
@@ -68,8 +73,8 @@ const Education = () => {
                   </div>
                 </div>
                 <p className="font-sans text-xs text-muted-foreground">
-                {/* Pre-University Education in PCMC (Physics, Chemistry, Mathematics, and Computer Science) */}
-                Pre-University Education 
+                  {/* Pre-University Education in PCMC (Physics, Chemistry, Mathematics, and Computer Science) */}
+                  Pre-University Education
                 </p>
               </div>
             </div>
@@ -77,16 +82,18 @@ const Education = () => {
         </a>
         <div
           className="block cursor-pointer"
-          href=""
+          href={null}
           target="_blank"
           rel="noopener noreferrer"
         >
           <div className="rounded-lg bg-card text-card-foreground flex items-center ">
             <div className="flex-none">
               <span className="relative flex shrink-0 overflow-hidden rounded-full border-4 border-card-foreground size-12 m-auto bg-muted-background dark:bg-foreground">
-                <img
-                  className="aspect-square h-full object-cover "
-                  alt=""
+                <Image
+                  width={48}
+                  height={48}
+                  className="aspect-square object-cover"
+                  alt="School Logo"
                   src="/Education/priyadarshini.jpg"
                 />
               </span>
@@ -98,12 +105,12 @@ const Education = () => {
                     Priyadarshini English Medium School Bettampady
                   </h3>
                   <div className="text-xs sm:text-sm text-muted-foreground text-right flex-shrink-0">
-                  <div className="">2011 - 2021</div>
-                  <div className="">96.9 %</div>
+                    <div className="">2011 - 2021</div>
+                    <div className="">96.9 %</div>
                   </div>
                 </div>
                 <p className="font-sans text-xs text-muted-foreground">
-                Secondary Education
+                  Secondary Education
                 </p>
               </div>
             </div>

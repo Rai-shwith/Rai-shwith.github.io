@@ -6,7 +6,7 @@ const Notification = ({ type, message }) => {
 
   return (
     <div
-      className={`fixed top-5 right-5 p-4 rounded-lg shadow-lg transform transition-all duration-500 ${
+      className={`fixed top-5 z-50 right-5 p-4 rounded-lg shadow-lg transform transition-all duration-500 ${
         type === "success" ? "bg-green-500" : "bg-red-500"
       } animate__animated animate__fadeIn animate__faster`}
     >

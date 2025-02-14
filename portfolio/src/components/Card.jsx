@@ -5,6 +5,7 @@ import ProjectStatus from "./ProjectStatus";
 import Description from "./Description";
 import VideoComponent from "./VideoComponent";
 import TechStack from "./TechStack";
+import Link from "next/link";
 
 const Card = ({
   title,
@@ -42,7 +43,7 @@ const Card = ({
           <TechStack techStack={techStack} tags={tags} />
         <div className=" flex w-full justify-start space-x-5 ">
           {website && (
-            <a
+            <Link
               href={
                 website.startsWith("https://")
                   ? website
@@ -55,9 +56,9 @@ const Card = ({
                 <Internet />
                 <div className="">Website</div>
               </div>
-            </a>
+            </Link>
           )}
-          <a
+          <Link
             href={"https://github.com/Rai-shwith/" + github}
             target="_blank"
             rel="noopener"
@@ -66,7 +67,7 @@ const Card = ({
               <Github />
               <div className="">Github</div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
