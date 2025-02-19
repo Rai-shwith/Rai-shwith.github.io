@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Internet from "./internet";
 import Github from "./icons/Github";

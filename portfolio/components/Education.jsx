@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Education = () => {
@@ -15,9 +16,10 @@ const Education = () => {
           <div className="rounded-lg bg-card text-card-foreground flex items-center ">
             <div className="flex-none">
               <span className="relative flex shrink-0 overflow-hidden rounded-full border-4 border-card-foreground size-12 m-auto bg-muted-background dark:bg-foreground">
-                <img
-                  className="aspect-square h-full w-full object-contain"
-                  alt=""
+                <Image
+                width={48}
+                height={48}
+                  alt="Ramaiah Institute of Technology Logo"
                   src="/Education/ramaiah.png"
                 />
               </span>
@@ -49,10 +51,12 @@ const Education = () => {
           <div className="rounded-lg bg-card text-card-foreground flex items-center ">
             <div className="flex-none">
               <span className="relative flex shrink-0 overflow-hidden rounded-full border-4 border-card-foreground size-12 m-auto bg-muted-background dark:bg-foreground">
-                <img
+                <Image
                   className="aspect-square h-full w-full object-cover"
-                  alt=""
+                  alt="Vivekananda P U college Logo"
                   src="/Education/vivek.png"
+                  width={48}
+                  height={48}
                 />
               </span>
             </div>
@@ -84,10 +88,11 @@ const Education = () => {
           <div className="rounded-lg bg-card text-card-foreground flex items-center ">
             <div className="flex-none">
               <span className="relative flex shrink-0 overflow-hidden rounded-full border-4 border-card-foreground size-12 m-auto bg-muted-background dark:bg-foreground">
-                <img
-                  className="aspect-square h-full object-cover "
-                  alt=""
-                  src="/Education/priyadarshini.jpg"
+                <Image
+                width={48}
+                height={48}
+                  alt="Priyadarshini Logo"
+                  src="/Education/priyadarshini.png"
                 />
               </span>
             </div>

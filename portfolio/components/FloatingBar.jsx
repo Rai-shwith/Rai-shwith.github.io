@@ -2,15 +2,12 @@ import React from "react";
 import Github from "./icons/Github";
 import Home from "./icons/Home";
 import LinkedIn from "./icons/LinkedIn";
-import ToggleDark from "./icons/ToggleDark";
-import ToggleLight from "./icons/ToggleLight";
-import { useTheme } from "../context/ThemeContext";
 import Telegram from "./icons/Telegram";
 import Whatsapp from "./icons/Whatsapp";
+import ToggleThemeBtn from "./ToggleThemeBtn";
 
 const FloatingBar = () => {
 
-  const {toggleTheme} = useTheme()
 
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-0 md:top-4 z-30 mx-auto mb-4 flex origin-bottom h-full max-h-14 ">
@@ -86,16 +83,7 @@ const FloatingBar = () => {
           distance="140"
         ></div>
         <div className="flex aspect-square cursor-pointer items-center justify-center rounded-full w-[40px]">
-          <button
-            className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 w-9 rounded-full px-2"
-            type="button"
-            aria-label="Toggle theme"
-            onClick={toggleTheme}
-          >
-            < ToggleDark />
-           < ToggleLight />
-
-          </button>
+      <ToggleThemeBtn />
         </div>
       </div>
     </div>
