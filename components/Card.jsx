@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import Internet from "./internet";
+import Internet from "./Internet";
 import Github from "./icons/Github";
 import ProjectStatus from "./ProjectStatus";
 import { useTheme } from "../context/ThemeContext";
