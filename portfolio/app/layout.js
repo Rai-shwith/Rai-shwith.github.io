@@ -1,16 +1,13 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./theme.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+import { Plus_Jakarta_Sans } from "next/font/google";
+// ✅ Explicitly specify available weights
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-jakarta",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 export const metadata = {
   title: "Ashwith Rai - Developer & Tech Enthusiast",
   description:
@@ -21,11 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${jakarta.variable} `}>{children}</body>
     </html>
   );
 }

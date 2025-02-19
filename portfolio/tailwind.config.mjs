@@ -18,10 +18,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        kumbh: ['Kumbh Sans', 'sans-serif'],
-        pavanam: ['Pavanam', 'sans-serif'],
-        jakarta: ['Plus Jakarta Sans', 'sans-serif'],
-        poppins: ['Poppins', 'sans-serif'],
+        kumbh: "var(--font-kumbh)",
+        pavanam: "var(--font-pavanam)",
+        jakarta: "var(--font-jakarta)",
+        poppins: "var(--font-poppins)",
       },
       colors: {
         background: withOpacity('--background'),
