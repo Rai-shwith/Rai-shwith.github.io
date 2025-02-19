@@ -10,9 +10,9 @@ const Description = ({ description }) => {
   );
 
   return (
-    <div className="text-sm font-light max-w-full text-pretty text-muted-foreground">
+    <p className="text-sm font-light max-w-full text-pretty text-muted-foreground">
       {parts}
-    </div>
+    </p>
   );
 };
 

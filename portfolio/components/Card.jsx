@@ -43,7 +43,7 @@ const Card = ({
         </video>
       </div>
       <div className=" flex flex-col p-3">
-        <div className="font-bold mt-1 text-lg">{title}</div>
+        <h3 className="font-bold mt-1 text-lg">{title}</h3>
         <div className="flex justify-start space-x-2">
           <ProjectStatus status={status} />
           <div className="font-sans text-sm opacity-80">{time}</div>

@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    swcMinify: true, // ✅ Ensures JS minification
     images: {
       remotePatterns: [
           {

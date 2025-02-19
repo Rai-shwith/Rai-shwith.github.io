@@ -14,12 +14,12 @@ export default function Home() {
     <ThemeProvider>
       <Background>
         <NotificationProvider>
-          <FloatingBar />
           <Header />
           <About />
           <Projects />
           <Education />
           <ContactMe />
+          <FloatingBar />
         </NotificationProvider>
       </Background>
     </ThemeProvider>

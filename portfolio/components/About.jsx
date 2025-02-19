@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="flex flex-col my-8">
-      <h3 className="font-bold text-xl">About</h3>
+      <h2 className="font-bold text-xl">About</h2>
       <p className="text-muted-foreground">
         I'm a passionate <span className="text-muted-foreground font-bold">web developer</span> who loves turning ideas into functional,
         user-friendly applications. From crafting sleek <span className="text-muted-foreground font-bold">weather apps</span> to
