@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Education = () => {
@@ -7,7 +8,7 @@ const Education = () => {
         <div className="w-2 h-3/5 top-1/4 bottom-1/4 bg-card-foreground absolute ml-5 "></div>
       <h2 className="text-xl font-bold relative">Education</h2>
       <div className="flex flex-col space-y-5">
-        <a
+        <Link
           className="block cursor-pointer"
           href="https://msrit.edu"
           target="_blank"
@@ -41,8 +42,8 @@ const Education = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a
+        </Link>
+        <Link
           className="block cursor-pointer"
           href="https://vivekanandapuc.com/"
           target="_blank"
@@ -78,10 +79,10 @@ const Education = () => {
               </div>
             </div>
           </div>
-        </a>
+        </Link>
         <div
           className="block cursor-pointer"
-          href=""
+          href={null}
           target="_blank"
           rel="noopener noreferrer"
         >

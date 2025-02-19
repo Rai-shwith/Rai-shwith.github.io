@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Header = () => {
@@ -13,15 +14,16 @@ const Header = () => {
             I specialize in web development and enjoy working with various
             technologies to bring ideas to life. My goal is to build
             applications that are not only functional but also user-friendly and
-            visually appealing.🤠 
+            visually appealing.🤠
           </div>
         </div>
-        <div className="flex-none md:w-64 md:h-64 h-24 w-24 bg-red-400 rounded-full">
-            <img
-                src="https://avatars.githubusercontent.com/u/147788165?v=4"
-                alt="Ashwith Rai"
-                className="rounded-full w-full h-full object-contain"
-            />
+        <div className="relative flex-none md:w-64 md:h-64 h-24 w-24 bg-red-400 rounded-full overflow-hidden">
+          <Image
+            src="https://avatars.githubusercontent.com/u/147788165?v=4"
+            alt="Ashwith Rai"
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
     </>
