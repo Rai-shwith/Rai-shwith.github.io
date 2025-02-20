@@ -21,7 +21,7 @@ const Education = () => {
                 width={48}
                 height={48}
                   alt="Ramaiah Institute of Technology Logo"
-                  src="/Education/ramaiah.png"
+                  src="./Education/ramaiah.png"
                 />
               </span>
             </div>
@@ -55,7 +55,7 @@ const Education = () => {
                 <Image
                   className="aspect-square h-full w-full object-cover"
                   alt="Vivekananda P U college Logo"
-                  src="/Education/vivek.png"
+                  src="./Education/vivek.png"
                   width={48}
                   height={48}
                 />
@@ -93,7 +93,7 @@ const Education = () => {
                 width={48}
                 height={48}
                   alt="Priyadarshini Logo"
-                  src="/Education/priyadarshini.png"
+                  src="./Education/priyadarshini.png"
                 />
               </span>
             </div>

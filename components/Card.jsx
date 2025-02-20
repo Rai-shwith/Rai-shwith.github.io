@@ -32,14 +32,14 @@ const Card = ({
           poster={
             thumbnailLightSrc
               ? theme == "light"
-                ? `/thumbnail/${thumbnailLightSrc}`
-                : `/thumbnail/${thumbnailSrc}`
-              : `/thumbnail/${thumbnailSrc}`
+                ? `./Thumbnail/${thumbnailLightSrc}`
+                : `./Thumbnail/${thumbnailSrc}`
+              : `./Thumbnail/${thumbnailSrc}`
           }
           onMouseEnter={(e) => e.target.pause()}
           onMouseLeave={(e) => e.target.play()}
         >
-          <source src={`/videos/${videoSrc}`} type="video/mp4" />
+          <source src={`./videos/${videoSrc}`} type="video/mp4" />
         </video>
       </div>
       <div className=" flex flex-col p-3">
