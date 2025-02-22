@@ -13,6 +13,15 @@ export const metadata = {
   description:
     "Ashwith Rai is a passionate web developer and tech enthusiast specializing in modern web technologies. Explore my portfolio and projects here!",
   keywords: "Ashwith Rai, web developer, Next, React, FastAPI, Next.js",
+  icons: {
+    icon: [
+      { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon/favicon.ico", sizes: "48x48", type: "image/x-icon" },
+      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/favicon/apple-touch-icon.png", // iOS Safari
+  },
+  manifest: "/favicon/site.webmanifest", // Web app manifest
 };
 
 export default function RootLayout({ children }) {
