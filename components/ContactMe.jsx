@@ -31,15 +31,16 @@ const ContactMe = () => {
     setLoading(true);
 
     const token = recaptchaRef.current?.getValue();
-    // if (!token) {
-    //   triggerNotification("error", "Please verify reCAPTCHA!");
-    //   setLoading(false);
-    //   return;
-    // }
+    if (!token) {
+      console.log("No token found");
+      triggerNotification("error", "Please verify reCAPTCHA!");
+      setLoading(false);
+      return;
+    }
 
     const form = new FormData();
     Object.keys(data).forEach((key) => form.append(key, data[key]));
-
+    form.append("g-recaptcha-response", token);
     try {
       const response = await fetch(
         "https://script.google.com/macros/s/AKfycbyDwQEPLt6ieIMk1AAUJ8JbGDopTDKH3hHbb_-TPShj4NrWOipoYdiNodgjUHmVycdTuQ/exec",
@@ -51,12 +52,15 @@ const ContactMe = () => {
       const result = await response.json();
 
       if (result.status === "Success") {
+        console.log("Message successfully sent!")
         triggerNotification("success", "Message successfully sent!");
         reset();
         recaptchaRef.current?.reset();
       }else if (result.message === "CAPTCHA verification failed"){
+        console.log("reCAPTCHA doesn't match")
         triggerNotification("error", "Please verify reCAPTCHA!");
       } else {
+        console.log("Something went wrong maybe internet issues.");
         throw new Error("There was an error sending the message!");
       }
     } catch (error) {
