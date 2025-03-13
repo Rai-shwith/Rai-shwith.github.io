@@ -16,10 +16,10 @@ const Projects = () => {
         <Card
           title={"Leet2Git"}
           time={"Aug 2024"}
-          status={"In Progress"}
+          status={"Beta Release"}
           thumbnailSrc={"leet2git.jpg"}
           videoSrc={"LeetCode.webm"}
-          website={""}
+          website={"https://leet2git.ashwithrai.me"}
           github={"LEET2GIT"}
           frameworks={[
             "HTML",
