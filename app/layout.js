@@ -29,7 +29,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics gtag.js */}
+      <meta name="google-adsense-account" content="ca-pub-6603452020198848" />        
+      {/* Google Analytics gtag.js */}
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=G-65K2CPE602`}
