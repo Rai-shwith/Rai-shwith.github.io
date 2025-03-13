@@ -1,5 +1,6 @@
 import "./globals.css";
 import "./theme.css";
+import Script from "next/script";
 import { Plus_Jakarta_Sans } from "next/font/google";
 // ✅ Explicitly specify available weights
 const jakarta = Plus_Jakarta_Sans({
@@ -27,6 +28,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics gtag.js */}
+        <Script
+          strategy="afterInteractive"
+          src={`https://www.googletagmanager.com/gtag/js?id=G-65K2CPE602`}
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-65K2CPE602');
+          `}
+        </Script>
+      </head>
       <body className={`${jakarta.variable} `}>{children}</body>
     </html>
   );
