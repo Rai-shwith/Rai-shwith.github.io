@@ -74,6 +74,27 @@ const Projects = () => {
           }
         />
         <Card
+          title={"Priyadarshini - My School Website"}
+          time={"Feb 2025"}
+          status={"Completed"}
+          thumbnailSrc={"priyadarshini.jpg"}
+          videoSrc={"priyadarshini.webm"}
+          website={"https://priyadarshini.ashwithrai.me"}
+          github={"priyadarshini"}
+          frameworks={[
+            "Next.js",
+            "React.js",
+            "Tailwind CSS",
+            "Full Stack",
+            "Vercel",
+            "SSR"
+          ]}
+          description={
+            "*Priyadarshini Online* 🏫 is a *modern, full-stack website* built to showcase *Priyadarshini English Medium School* 🌟. Designed with *bilingual support* 🇮🇳 (English & Kannada), the website ensures *accessibility* for a wider audience. It features an *online admission form* 📝 for seamless student enrollment, an *interactive contact form* 📩, and an *embedded Google Map* 📍 for easy navigation. The platform provides *comprehensive details* about the *school’s facilities* 🏢, making it an *informative hub* for students, parents, and staff. Hosted on *Vercel* 🚀 and built with *Next.js & Tailwind CSS* 🎨, this project reflects my *dedication* to creating *efficient, user-friendly* web solutions 🌐."
+          }
+          
+        />
+        <Card
           title={"Get My Attendance"}
           time={"Dec 2024"}
           status={"Completed"}
