@@ -97,12 +97,12 @@ const Projects = () => {
         <Card
           title={"Get My Attendance"}
           time={"Dec 2024"}
-          status={"Completed"}
+          status={"Archived"}
           thumbnailSrc={"getMyAttendance.jpg"}
           thumbnailLightSrc={"getMyAttendanceLight.jpg"}
           videoSrc={""}
           website={""}
-          github={"getMyAttendance"}
+          github={"get-my-attendance"}
           frameworks={[
             "HTML",
             "Tailwind CSS",
@@ -119,18 +119,18 @@ const Projects = () => {
             "Raspberry Pi",
           ]}
           description={
-            "A *web-based attendance management system* 🎓 designed for *colleges*, built during a *24-hour hackathon* ⏳. It allows *teachers* to *mark attendance digitally* 📋. The system was hosted on a *local Raspberry Pi* 🍓, accessible via *attendance.local*. The project *ranked in the Top 5* 🏆 at the hackathon and later evolved into a more advanced version with plans for *online hosting* and *synchronization* 🔄. 🚀"
+            "Get-My-Attendance is the *evolved version* 🔄 designed for *offline-first attendance management* 📊 in *colleges* using a *Raspberry Pi server* 🍓. It ensures *seamless access* whether *online or offline* 🌐, allowing *teachers* to *manage attendance* and *students* to *track records* efficiently 📚. After marking attendance, *teachers can view the history* 📜 and *download attendance details* in *PDF or Excel format* 📄. With *mobile support* 📱 already integrated, it streamlines attendance management for a hassle-free experience! ✅"
           }
         />
         <Card
           title={"Classly"}
           time={"Nov 2024"}
-          status={"In Progress"}
+          status={"Planned"}
           thumbnailSrc={"classly.jpg"}
           thumbnailLightSrc={"classlyLight.jpg"}
           videoSrc={""}
-          website={"get-my-attendance"}
-          github={""}
+          website={""}
+          github={"classly"}
           frameworks={[
             "React",
             "Tailwind CSS",
@@ -149,7 +149,7 @@ const Projects = () => {
             "Cloud Synchronization",
           ]}
           description={
-            "Classly is the *evolved version* 🔄 of *Get-My-Attendance*, designed for *offline-first attendance management* 📊 in *colleges* using a *Raspberry Pi server* 🍓 while supporting *cloud synchronization* ☁️. It ensures *seamless access* whether *online or offline* 🌐, allowing *teachers* to *manage attendance* and *students* to *track records* efficiently 📚. With *mobile support* 📱 already integrated, future plans include *expanding to entire colleges* 🏫 and transforming it into a complete *Student Information System (SIS)* 🏛️. 🚀"
+            "Classly is the evolved version 🔄 of Get-My-Attendance, now a fully hosted web app ☁️ that eliminates the need for a Raspberry Pi setup 🚀. Designed for effortless attendance management 📊, it leverages an intelligent network-based approach 🔗 to streamline the process seamlessly. Teachers can manage attendance with ease, while students can track their records anytime, anywhere 📚. With a modern, scalable architecture, Classly brings next-level efficiency to attendance tracking in colleges! 🎯"
           }
         />
         <Card
