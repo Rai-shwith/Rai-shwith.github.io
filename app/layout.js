@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <meta name="google-adsense-account" content="ca-pub-6603452020198848" />        
+      {/* <meta name="google-adsense-account" content="ca-pub-6603452020198848" />         */}
       {/* Google Analytics gtag.js */}
         <Script
           strategy="afterInteractive"
@@ -43,11 +43,11 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-65K2CPE602');
           `}
         </Script>
-        <Script
+        {/* <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6603452020198848"
           crossOrigin="anonymous"
-        />
+        /> */}
       </head>
       <body className={`${jakarta.variable} `}>{children}</body>
     </html>
