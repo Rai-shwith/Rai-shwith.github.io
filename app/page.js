@@ -8,6 +8,7 @@ import ContactMe from "@/components/ContactMe";
 import Education from "@/components/Education";
 import { NotificationProvider } from "@/context/NotificationContext";
 import { ThemeProvider } from "@/context/ThemeContext";
+import MySkills from "@/components/MySkills";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <NotificationProvider>
           <Header />
           <About />
+          <MySkills />
           <Projects />
           <Education />
           <ContactMe />

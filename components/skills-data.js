@@ -1,0 +1,82 @@
+import {
+    // VscVscode ,
+    SiPython,
+    SiJavascript,
+    SiTypescript,
+    SiC,
+    SiCplusplus,
+    SiPostgresql,
+    SiHtml5,
+    SiCss3,
+    SiAssemblyscript,
+    SiReact,
+    SiNextdotjs,
+    SiFastapi,
+    SiExpress,
+    SiNodedotjs,
+    SiTailwindcss,
+    SiGit,
+    SiNeo4J,
+    SiSqlite,
+    SiDocker,
+    SiPytorch,
+    SiNumpy,
+    SiPandas,
+    SiPlotly,
+    SiGithub,
+    SiHeroku,
+    SiVercel,
+    SiRender,
+    SiPostman,
+    SiFigma
+  } from "react-icons/si";
+  
+  import { VscVscode } from "react-icons/vsc";
+
+  export const skillsData = {
+    languages: [
+      { name: "Python", icon: <SiPython color="#3776AB" />, description: "Powerful scripting and general-purpose language." },
+      { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" />, description: "Web scripting & dynamic content." },
+      { name: "TypeScript", icon: <SiTypescript color="#3178C6" />, description: "Typed superset of JavaScript." },
+      { name: "HTML", icon: <SiHtml5 color="#E34F26" />, description: "Markup language for web content." },
+      { name: "CSS", icon: <SiCss3 color="#1572B6" />, description: "Style language for web design." },
+      { name: "SQL", icon: <SiSqlite color="#003B57" />, description: "Language for managing databases." },
+      { name: "Cypher", icon: <SiNeo4J color="#008CC1" />, description: "Query language for Neo4j graphs." },
+      { name: "C", icon: <SiC color="#A8B9CC" />, description: "Low-level programming language." },
+      { name: "C++", icon: <SiCplusplus color="#00599C" />, description: "Object-oriented upgrade to C." },
+      { name: "Assembly", icon: <SiAssemblyscript color="#6E4C13" />, description: "Hardware-level code." },
+    ],
+    frameworks: [
+      { name: "FastAPI", icon: <SiFastapi color="#009688" />, description: "Blazingly fast Python backend framework." },
+      { name: "React", icon: <SiReact color="#61DAFB" />, description: "Frontend library for dynamic UIs." },
+      { name: "Next.js", icon: <SiNextdotjs color="#000000" />, description: "Full-stack React framework." },
+      { name: "Express", icon: <SiExpress color="#000000" />, description: "Minimal Node.js web framework." },
+      { name: "Node.js", icon: <SiNodedotjs color="#339933" />, description: "JavaScript runtime environment." },
+      { name: "Tailwind CSS", icon: <SiTailwindcss color="#38BDF8" />, description: "Utility-first CSS framework." },
+      { name: "NumPy", icon: <SiNumpy color="#013243" />, description: "Scientific computing for Python." },
+      { name: "Pandas", icon: <SiPandas color="#150458" />, description: "Data analysis library for Python." },
+      { name: "Matplotlib", icon: <SiPlotly color="#3F4F75" />, description: "Visualization library." },
+    ],
+    tools: [
+        { name: "Git", icon: <SiGit color="#F05032" />, description: "Version control system." },
+        { name: "GitHub", icon: <SiGithub color="#181717" />, description: "Code hosting and collaboration platform." },
+        { name: "Codespaces", icon: <SiGithub color="#181717" />, description: "Cloud-based development environment." },
+        { name: "VS Code", icon: <VscVscode   color="#007ACC" />, description: "My beloved code editor." },
+        { name: "Neo4j", icon: <SiNeo4J color="#008CC1" />, description: "Graph database." },
+        { name: "Figma", icon: <SiFigma color="#F24E1E" />, description: "UI/UX design and prototyping tool." },
+        { name: "PostgreSQL", icon: <SiPostgresql color="#336791" />, description: "Powerful relational DB." },
+        { name: "Heroku", icon: <SiHeroku color="#430098" />, description: "Cloud app platform for deployment." },
+        { name: "Vercel", icon: <SiVercel color="#000000" />, description: "Frontend hosting for React/Next.js." },
+        { name: "Render", icon: <SiRender color="#46E3B7" />, description: "Modern cloud hosting for web apps." },
+        { name: "Docker", icon: <SiDocker color="#2496ED" />, description: "Containerization tool." },
+        { name: "Postman", icon: <SiPostman color="#FF6C37" />, description: "API development and testing platform." },
+      ]
+      ,
+    learning: [
+      { name: "Docker", icon: <SiDocker color="#2496ED" />, description: "Containerization tool." },
+      { name: "TypeScript", icon: <SiTypescript color="#3178C6" />, description: "Learning types and interfaces." },
+      { name: "Cypher", icon: <SiNeo4J color="#008CC1" />, description: "Graph querying language." },
+      { name: "PyTorch", icon: <SiPytorch color="#EE4C2C" />, description: "Deep learning library." },
+    ]
+  };
+  

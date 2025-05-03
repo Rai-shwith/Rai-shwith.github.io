@@ -73,7 +73,7 @@ const ContactMe = () => {
   return (
     <div className="mx-auto md:mx-0 md:items-stretch md:w-full flex flex-col p-4 mt-10 bg-card rounded-lg shadow-md">
       <h2 className="text-2xl font-bold text-foreground mb-4 flex-1">
-        Contact Me
+      Let's Connect
       </h2>
       <form onSubmit={handleSubmit(onSubmit)} className="w-full flex flex-col">
         <div className="md:grid md:grid-cols-2 md:gap-x-10">

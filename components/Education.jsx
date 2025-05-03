@@ -6,7 +6,7 @@ const Education = () => {
 	return (
 		<div className="flex min-h-0 flex-col gap-y-3 relative">
 				<div className="w-2 h-3/5 top-1/4 bottom-1/4 bg-card-foreground absolute ml-5 "></div>
-			<h2 className="text-xl font-bold relative">Education</h2>
+			<h2 className="text-xl font-bold relative">Knowledge Base</h2>
 			<div className="flex flex-col space-y-5">
 				<Link
 					className="block cursor-pointer"
@@ -33,7 +33,7 @@ const Education = () => {
 									</h3>
 									<div className="text-xs sm:text-sm text-muted-foreground text-right flex-shrink-0">
 										<div className="">2023 - 2027</div>
-										<div className="">9.6 CGPA</div>
+										<div className="">9.3 CGPA</div>
 									</div>
 								</div>
 								<h3 className="font-sans text-xs text-muted-foreground">

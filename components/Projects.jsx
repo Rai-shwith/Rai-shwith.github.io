@@ -6,7 +6,7 @@ const Projects = () => {
     <div className="flex flex-col items-center my-8">
       {/* <button className='appearance-none px-3 py-1 text-sm text-background bg-foreground rounded-lg'>My Projects</button> */}
       <h2 className="text-3xl font-bold tracking-tighter my-3">
-        Featured Projects
+      Hall of Code
       </h2>
       <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed">
         I build projects from 0 to 1, turning ideas into reality. Take a look at
