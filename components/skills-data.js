@@ -32,6 +32,7 @@ import {
   } from "react-icons/si";
   
   import { VscVscode } from "react-icons/vsc";
+  import { FaMicrochip } from "react-icons/fa";
 
   export const skillsData = {
     languages: [
@@ -44,6 +45,7 @@ import {
       { name: "Cypher", icon: <SiNeo4J color="#008CC1" />, description: "Query language for Neo4j graphs." },
       { name: "C", icon: <SiC color="#A8B9CC" />, description: "Low-level programming language." },
       { name: "C++", icon: <SiCplusplus color="#00599C" />, description: "Object-oriented upgrade to C." },
+      { name: "Verilog", icon: <FaMicrochip color="#4A90E2" />, description: "Hardware Description Language." },
       { name: "Assembly", icon: <SiAssemblyscript color="#6E4C13" />, description: "Hardware-level code." },
     ],
     frameworks: [
