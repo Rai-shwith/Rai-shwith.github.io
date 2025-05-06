@@ -58,7 +58,7 @@ const Projects = () => {
           status={"Completed"}
           thumbnailSrc={"skycast.jpg"}
           videoSrc={"skycast.webm"}
-          website={"https://skycast.ashwithrai.me"}
+          website={"SkyCast"}
           github={"SkyCast"}
           frameworks={[
             "HTML",
