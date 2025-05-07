@@ -1,7 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Card from "./Card";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 const Projects = () => {
+  const [showAll, setShowAll] = useState(false);
+
   return (
     <div className="flex flex-col items-center my-8">
       {/* <button className='appearance-none px-3 py-1 text-sm text-background bg-foreground rounded-lg'>My Projects</button> */}
@@ -12,6 +16,7 @@ const Projects = () => {
         I build projects from 0 to 1, turning ideas into reality. Take a look at
         some of my favorite projects below.
       </p>
+
       <div className="grid md:grid-cols-3 w-full gap-5 justify-center mt-5">
         <Card
           title={"Leet2Git"}
@@ -37,7 +42,6 @@ const Projects = () => {
           description={
             "*Leet2Git* ⚡ is an *automation tool* that seamlessly transforms *LeetCode solutions* into a *structured GitHub repository*, making it easier to *track progress* and *showcase problem-solving skills* 🤖. Each solution is *systematically categorized*, ensuring an *organized and accessible format* 🏷️. This project reflects my passion for *streamlining workflows* and creating *efficient tools* 🛠️ to manage *DSA (Data Structures and Algorithms) solutions* 💻. Currently in *beta release* 🚀, Leet2Git is open for *testing and feedback*, allowing developers to explore its features and contribute to its improvement. Your insights and suggestions are invaluable in refining the tool! 💡"
           }
-          
         />
         <Card
           title={"Leet Code Solutions"}
@@ -73,233 +77,249 @@ const Projects = () => {
             "SkyCast is a *Node.js weather app* ☁️ that provides *real-time weather updates* and *5-day forecasts* 🌦️. It automatically detects your *location* via *GPS* 📍 or *IP* and supports *manual searches* 🔍 for any city. Powered by the *OpenWeatherMap API* 🌍, SkyCast delivers *accurate weather data* in a *simple, user-friendly interface* 🎯."
           }
         />
-        <Card
-          title={"Priyadarshini - My School Website"}
-          time={"Feb 2025"}
-          status={"Completed"}
-          thumbnailSrc={"priyadarshini.jpg"}
-          videoSrc={"priyadarshini.webm"}
-          website={"https://priyadarshini.ashwithrai.me"}
-          github={"priyadarshini"}
-          frameworks={[
-            "Next.js",
-            "React.js",
-            "Tailwind CSS",
-            "Full Stack",
-            "Vercel",
-            "SSR"
-          ]}
-          description={
-            "*Priyadarshini Online* 🏫 is a *modern, full-stack website* built to showcase *Priyadarshini English Medium School* 🌟. Designed with *bilingual support* 🇮🇳 (English & Kannada), the website ensures *accessibility* for a wider audience. It features an *online admission form* 📝 for seamless student enrollment, an *interactive contact form* 📩, and an *embedded Google Map* 📍 for easy navigation. The platform provides *comprehensive details* about the *school’s facilities* 🏢, making it an *informative hub* for students, parents, and staff. Hosted on *Vercel* 🚀 and built with *Next.js & Tailwind CSS* 🎨, this project reflects my *dedication* to creating *efficient, user-friendly* web solutions 🌐."
-          }
-          
-        />
-        <Card
-          title={"Get My Attendance"}
-          time={"Dec 2024"}
-          status={"Archived"}
-          thumbnailSrc={"getMyAttendance.jpg"}
-          thumbnailLightSrc={"getMyAttendanceLight.jpg"}
-          videoSrc={""}
-          website={""}
-          github={"get-my-attendance"}
-          frameworks={[
-            "HTML",
-            "Tailwind CSS",
-            "JavaScript",
-            "PostgreSQL",
-            "Express",
-            "EJS",
-            "WebSockets",
-            "Offline",
-            "Hackathon",
-            "Attendance Management",
-            "Responsive",
-            "Innovative",
-            "Raspberry Pi",
-          ]}
-          description={
-            "Get-My-Attendance is the *evolved version* 🔄 designed for *offline-first attendance management* 📊 in *colleges* using a *Raspberry Pi server* 🍓. It ensures *seamless access* whether *online or offline* 🌐, allowing *teachers* to *manage attendance* and *students* to *track records* efficiently 📚. After marking attendance, *teachers can view the history* 📜 and *download attendance details* in *PDF or Excel format* 📄. With *mobile support* 📱 already integrated, it streamlines attendance management for a hassle-free experience! ✅"
-          }
-        />
-        <Card
-          title={"Classly"}
-          time={"Nov 2024"}
-          status={"Planned"}
-          thumbnailSrc={"classly.jpg"}
-          thumbnailLightSrc={"classlyLight.jpg"}
-          videoSrc={""}
-          website={""}
-          github={"classly"}
-          frameworks={[
-            "React",
-            "Tailwind CSS",
-            "PostgreSQL",
-            "Express",
-            "Education",
-            "WebSockets",
-            "Offline-first",
-            ,
-            "Raspberry Pi",
-            "Scalable",
-            "Student Information System (SIS)",
-            "Attendance Management",
-            "Mobile Support",
-            "Innovative",
-            "Cloud Synchronization",
-          ]}
-          description={
-            "Classly is the evolved version 🔄 of Get-My-Attendance, now a fully hosted web app ☁️ that eliminates the need for a Raspberry Pi setup 🚀. Designed for effortless attendance management 📊, it leverages an intelligent network-based approach 🔗 to streamline the process seamlessly. Teachers can manage attendance with ease, while students can track their records anytime, anywhere 📚. With a modern, scalable architecture, Classly brings next-level efficiency to attendance tracking in colleges! 🎯"
-          }
-        />
-        <Card
-          title={"C++ Lab Codes"}
-          time={"Oct 2024"}
-          status={"Completed"}
-          thumbnailSrc={"cpp.jpg"}
-          videoSrc={"cpp.webm"}
-          website={"cpp"}
-          github={"cpp"}
-          frameworks={[
-            "C++",
-            "Python",
-            "Beautiful Soup (bs4)",
-            "HTML",
-            "CSS",
-            "JavaScript",
-          ]}
-          description={
-            "I created a *webpage* 🌍 that showcases all the *C++ lab codes* from my *3rd semester* 📚. Using a *Python script* 🐍 with *BeautifulSoup (bs4)* 🍜, I converted each *C++ code* into *HTML pages* 🌐, allowing my *classmates* to view both the *code and its output* directly on the *website* 💻. This project made it *easier for students* to access and understand the *code* in an *interactive way* 🎯."
-          }
-        />
-        <Card
-          title={"Shopping Cart"}
-          time={"Jul 2024"}
-          status={"Completed"}
-          thumbnailSrc={"shopping.jpg"}
-          videoSrc={"shopping.webm"}
-          website={"FM-Challenge-Product-list-with-cart"}
-          github={"FM-Challenge-Product-list-with-cart"}
-          frameworks={[
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Responsive",
-            "Frontend Mentor Challenge",
-          ]}
-          description={
-            "I completed the *Product-list-with-cart challenge* 🛒 from *Frontend Mentor*, where I built a *product list* with a *fully functional cart* 🛍️. Users can *add or remove items*, *adjust quantities*, and view an *order confirmation modal* ✅. The project includes *responsive design* 📱, and *hover/focus states* 🖱️ for all interactive elements. I followed the provided *README.md* 📜 for setup and successfully implemented the challenge, ensuring a *smooth user experience* across different devices."
-          }
-        />
-        <Card
-          title={"Student Ranker"}
-          time={"Jul 2024"}
-          status={"Completed"}
-          thumbnailSrc={"studentRankerAfter.jpg"}
-          thumbnailLightSrc={"studentRanker.jpg"}
-          videoSrc={"studentRanker.webm"}
-          website={"Student-Ranker"}
-          github={"Student-Ranker "}
-          frameworks={["HTML", "CSS", "JavaScript"]}
-          description={
-            "I built a *webpage* 🌍 called *Student Ranker* 🎓 to help my *aunt*, a *school teacher* 🍎, *sort student marks* and *assign ranks automatically* 📊. The webpage is built using *HTML, CSS, and JavaScript* 🖥️. Teachers can enter the *names and marks* of *students*, and by pressing the *Arrange button* 🔢, the system *automatically assigns ranks* based on the *students' marks* 🎖️. This project significantly *simplified a previously tedious task* for *teachers* 👩‍🏫."
-          }
-        />
-        <Card
-          title={"Age Calculator"}
-          time={"Jul 2024"}
-          status={"Completed"}
-          thumbnailSrc={"ageCalculator.jpg"}
-          videoSrc={"ageCalculator.webm"}
-          website={"FM-Challenge-Age-calculator-app"}
-          github={"FM-Challenge-Age-calculator-app"}
-          frameworks={["HTML", "CSS", "JavaScript"]}
-          description={
-            "I completed the *Age Calculator App challenge* 📅 from *Frontend Mentor*, which calculates the *user's age* 🎂, including the *month and day* 📆, based on the *date of birth (DOB)* they enter. The app is *optimized* for both *desktop and mobile devices* 🖥️📱, providing a *seamless user experience* across different *screen sizes* 📊."
-          }
-        />
-        <Card
-          title={"Super Hero Web App"}
-          time={"Jun 2024"}
-          status={"Completed"}
-          thumbnailSrc={"hero.jpg"}
-          videoSrc={"heros.webm"}
-          website={"https://fastapi-superhero.onrender.com/"}
-          github={"FastAPI-SuperHero"}
-          frameworks={[
-            "FastAPI",
-            "HTML",
-            "CSS",
-            "JavaScript",
-            "Postgresql",
-            "Cockroach DB",
-            "SQL Alchemy",
-            "Alembic",
-            "On Render",
-          ]}
-          description={
-            "I built the *FastAPI-SuperHero* 🦸‍♂️ web application as my *first full-stack project* using *FastAPI* ⚡. Users can *log in* 🔐 with *email* (dummy email works), *sign up*, or *log in as a guest* 👤, and *create heroes* with *names and alter-egos* like *Spiderman* and *Peter Parker* 🕷️. They can *view all heroes*, *see individual hero details*, and *like* both their own and others' heroes ❤️. Additionally, users can *manage their profile*, *delete their heroes*, or even *delete their profile entirely* 🗑️. This project demonstrates my *ability to build a full-stack application* with *user authentication* and *CRUD operations* 🔄."
-          }
-        />
-        <Card
-          title={"Vegetable and Fruits Classifier"}
-          time={"Jan 2025"}
-          status={"Experimental"}
-          thumbnailSrc={"VegFruitAi.jpg"}
-          videoSrc={"vegFruitAi.webm"}
-          website={""}
-          github={"VegFruitAI"}
-          frameworks={[
-            "Python",
-            "FastAPI",
-            "TensorFlow",
-            "HTML",
-            "CSS",
-            "JavaScript",
-          ]}
-          description={
-            "I developed an *AI-powered fruit and vegetable recognition tool* 🍏🥦 that uses a *machine learning model* 🧠 to *identify fruits and vegetables* from *uploaded images* 🖼️. The project includes a *FastAPI backend* ⚡ and a *user-friendly frontend* 🎨. I used *TensorFlow* 🤖 for *image classification*, enabling *accurate identification* of various *fruits and vegetables* based on the *uploaded images* 🍎🥕."
-          }
-        />
-        <Card
-          title={"TO-DO App"}
-          time={"Nov 2024"}
-          status={"Completed"}
-          thumbnailSrc={"todo.jpg"}
-          videoSrc={"todo.webm"}
-          website={"TODO-REACT"}
-          github={"TODO-REACT"}
-          frameworks={["React", "Tailwind CSS"]}
-          description={
-            "I built a *TO-DO app* 📝 while learning *React* ⚛️, which is my *first React application* 🎉. The app allows users to *take notes*, *mark them as completed* ✅, and *hide the marked ones* 👀. It also *stores the information locally* 💾, ensuring the *data persists* even when the *browser tab is closed* 🔄. This project gave me *hands-on experience* with *React* and *local storage*, enhancing my *understanding of state management* and *data persistence*."
-          }
-        />
-        <Card
-          title={"Shell Codes using Python"}
-          time={"Oct 2024"}
-          status={"On Hold"}
-          thumbnailSrc={"shellpy.jpg"}
-          videoSrc={"shellpy.webm"}
-          website={""}
-          github={"shellpy"}
-          frameworks={["Python", "Shell Scripting"]}
-          description={
-            "*ShellPy* 🐍 is a *repository* where *Python meets shell scripting* 🖥️, designed to *simplify tasks* like *managing directories* and *files* 📂. The main script, *dirgen* 🏗️, allows users to *create directory and file structures* using an *easy Emmet-like syntax* ✨. By adding the *repository to your PATH*, you can use the *dirgen command* in your *terminal* 🖥️ to *generate file structures* with ease. The project is designed to make *shell scripting* more *efficient* and *fun* 🎉, with plans for *future Python scripts* 🐍 to further *enhance your shell scripting experience*."
-          }
-        />
-        <Card
-          title={"Web Development Skill Lab Codes"}
-          time={"Aug 2024"}
-          status={"Completed"}
-          thumbnailSrc={"hybridWebdev.jpg"}
-          videoSrc={"skillLab.webm"}
-          website={"Skill-Lab-Hybrid-Web-Dev"}
-          github={"Skill-Lab-Hybrid-Web-Dev"}
-          frameworks={["HTML", "CSS", "JavaScript"]}
-          description={
-            "This repository contains the work I have completed as part of the *Hybrid Web Development* 🌐 program offered by my *college* 🎓. The program is structured in a *day-by-day format* 📆, with specific *tasks, exercises, and assignments* to be completed *each day* 🏗️."
-          }
-        />
+        {showAll ? (
+          <>
+            <Card
+              title={"Priyadarshini - My School Website"}
+              time={"Feb 2025"}
+              status={"Completed"}
+              thumbnailSrc={"priyadarshini.jpg"}
+              videoSrc={"priyadarshini.webm"}
+              website={"https://priyadarshini.ashwithrai.me"}
+              github={"priyadarshini"}
+              frameworks={[
+                "Next.js",
+                "React.js",
+                "Tailwind CSS",
+                "Full Stack",
+                "Vercel",
+                "SSR",
+              ]}
+              description={
+                "*Priyadarshini Online* 🏫 is a *modern, full-stack website* built to showcase *Priyadarshini English Medium School* 🌟. Designed with *bilingual support* 🇮🇳 (English & Kannada), the website ensures *accessibility* for a wider audience. It features an *online admission form* 📝 for seamless student enrollment, an *interactive contact form* 📩, and an *embedded Google Map* 📍 for easy navigation. The platform provides *comprehensive details* about the *school’s facilities* 🏢, making it an *informative hub* for students, parents, and staff. Hosted on *Vercel* 🚀 and built with *Next.js & Tailwind CSS* 🎨, this project reflects my *dedication* to creating *efficient, user-friendly* web solutions 🌐."
+              }
+            />
+            <Card
+              title={"Get My Attendance"}
+              time={"Dec 2024"}
+              status={"Archived"}
+              thumbnailSrc={"getMyAttendance.jpg"}
+              thumbnailLightSrc={"getMyAttendanceLight.jpg"}
+              videoSrc={""}
+              website={""}
+              github={"get-my-attendance"}
+              frameworks={[
+                "HTML",
+                "Tailwind CSS",
+                "JavaScript",
+                "PostgreSQL",
+                "Express",
+                "EJS",
+                "WebSockets",
+                "Offline",
+                "Hackathon",
+                "Attendance Management",
+                "Responsive",
+                "Innovative",
+                "Raspberry Pi",
+              ]}
+              description={
+                "Get-My-Attendance is the *evolved version* 🔄 designed for *offline-first attendance management* 📊 in *colleges* using a *Raspberry Pi server* 🍓. It ensures *seamless access* whether *online or offline* 🌐, allowing *teachers* to *manage attendance* and *students* to *track records* efficiently 📚. After marking attendance, *teachers can view the history* 📜 and *download attendance details* in *PDF or Excel format* 📄. With *mobile support* 📱 already integrated, it streamlines attendance management for a hassle-free experience! ✅"
+              }
+            />
+            <Card
+              title={"Classly"}
+              time={"Nov 2024"}
+              status={"Planned"}
+              thumbnailSrc={"classly.jpg"}
+              thumbnailLightSrc={"classlyLight.jpg"}
+              videoSrc={""}
+              website={""}
+              github={"classly"}
+              frameworks={[
+                "React",
+                "Tailwind CSS",
+                "PostgreSQL",
+                "Express",
+                "Education",
+                "WebSockets",
+                "Offline-first",
+                ,
+                "Raspberry Pi",
+                "Scalable",
+                "Student Information System (SIS)",
+                "Attendance Management",
+                "Mobile Support",
+                "Innovative",
+                "Cloud Synchronization",
+              ]}
+              description={
+                "Classly is the evolved version 🔄 of Get-My-Attendance, now a fully hosted web app ☁️ that eliminates the need for a Raspberry Pi setup 🚀. Designed for effortless attendance management 📊, it leverages an intelligent network-based approach 🔗 to streamline the process seamlessly. Teachers can manage attendance with ease, while students can track their records anytime, anywhere 📚. With a modern, scalable architecture, Classly brings next-level efficiency to attendance tracking in colleges! 🎯"
+              }
+            />
+            <Card
+              title={"C++ Lab Codes"}
+              time={"Oct 2024"}
+              status={"Completed"}
+              thumbnailSrc={"cpp.jpg"}
+              videoSrc={"cpp.webm"}
+              website={"cpp"}
+              github={"cpp"}
+              frameworks={[
+                "C++",
+                "Python",
+                "Beautiful Soup (bs4)",
+                "HTML",
+                "CSS",
+                "JavaScript",
+              ]}
+              description={
+                "I created a *webpage* 🌍 that showcases all the *C++ lab codes* from my *3rd semester* 📚. Using a *Python script* 🐍 with *BeautifulSoup (bs4)* 🍜, I converted each *C++ code* into *HTML pages* 🌐, allowing my *classmates* to view both the *code and its output* directly on the *website* 💻. This project made it *easier for students* to access and understand the *code* in an *interactive way* 🎯."
+              }
+            />
+            <Card
+              title={"Shopping Cart"}
+              time={"Jul 2024"}
+              status={"Completed"}
+              thumbnailSrc={"shopping.jpg"}
+              videoSrc={"shopping.webm"}
+              website={"FM-Challenge-Product-list-with-cart"}
+              github={"FM-Challenge-Product-list-with-cart"}
+              frameworks={[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Responsive",
+                "Frontend Mentor Challenge",
+              ]}
+              description={
+                "I completed the *Product-list-with-cart challenge* 🛒 from *Frontend Mentor*, where I built a *product list* with a *fully functional cart* 🛍️. Users can *add or remove items*, *adjust quantities*, and view an *order confirmation modal* ✅. The project includes *responsive design* 📱, and *hover/focus states* 🖱️ for all interactive elements. I followed the provided *README.md* 📜 for setup and successfully implemented the challenge, ensuring a *smooth user experience* across different devices."
+              }
+            />
+            <Card
+              title={"Student Ranker"}
+              time={"Jul 2024"}
+              status={"Completed"}
+              thumbnailSrc={"studentRankerAfter.jpg"}
+              thumbnailLightSrc={"studentRanker.jpg"}
+              videoSrc={"studentRanker.webm"}
+              website={"Student-Ranker"}
+              github={"Student-Ranker "}
+              frameworks={["HTML", "CSS", "JavaScript"]}
+              description={
+                "I built a *webpage* 🌍 called *Student Ranker* 🎓 to help my *aunt*, a *school teacher* 🍎, *sort student marks* and *assign ranks automatically* 📊. The webpage is built using *HTML, CSS, and JavaScript* 🖥️. Teachers can enter the *names and marks* of *students*, and by pressing the *Arrange button* 🔢, the system *automatically assigns ranks* based on the *students' marks* 🎖️. This project significantly *simplified a previously tedious task* for *teachers* 👩‍🏫."
+              }
+            />
+            <Card
+              title={"Age Calculator"}
+              time={"Jul 2024"}
+              status={"Completed"}
+              thumbnailSrc={"ageCalculator.jpg"}
+              videoSrc={"ageCalculator.webm"}
+              website={"FM-Challenge-Age-calculator-app"}
+              github={"FM-Challenge-Age-calculator-app"}
+              frameworks={["HTML", "CSS", "JavaScript"]}
+              description={
+                "I completed the *Age Calculator App challenge* 📅 from *Frontend Mentor*, which calculates the *user's age* 🎂, including the *month and day* 📆, based on the *date of birth (DOB)* they enter. The app is *optimized* for both *desktop and mobile devices* 🖥️📱, providing a *seamless user experience* across different *screen sizes* 📊."
+              }
+            />
+            <Card
+              title={"Super Hero Web App"}
+              time={"Jun 2024"}
+              status={"Completed"}
+              thumbnailSrc={"hero.jpg"}
+              videoSrc={"heros.webm"}
+              website={"https://fastapi-superhero.onrender.com/"}
+              github={"FastAPI-SuperHero"}
+              frameworks={[
+                "FastAPI",
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Postgresql",
+                "Cockroach DB",
+                "SQL Alchemy",
+                "Alembic",
+                "On Render",
+              ]}
+              description={
+                "I built the *FastAPI-SuperHero* 🦸‍♂️ web application as my *first full-stack project* using *FastAPI* ⚡. Users can *log in* 🔐 with *email* (dummy email works), *sign up*, or *log in as a guest* 👤, and *create heroes* with *names and alter-egos* like *Spiderman* and *Peter Parker* 🕷️. They can *view all heroes*, *see individual hero details*, and *like* both their own and others' heroes ❤️. Additionally, users can *manage their profile*, *delete their heroes*, or even *delete their profile entirely* 🗑️. This project demonstrates my *ability to build a full-stack application* with *user authentication* and *CRUD operations* 🔄."
+              }
+            />
+            <Card
+              title={"Vegetable and Fruits Classifier"}
+              time={"Jan 2025"}
+              status={"Experimental"}
+              thumbnailSrc={"VegFruitAi.jpg"}
+              videoSrc={"vegFruitAi.webm"}
+              website={""}
+              github={"VegFruitAI"}
+              frameworks={[
+                "Python",
+                "FastAPI",
+                "TensorFlow",
+                "HTML",
+                "CSS",
+                "JavaScript",
+              ]}
+              description={
+                "I developed an *AI-powered fruit and vegetable recognition tool* 🍏🥦 that uses a *machine learning model* 🧠 to *identify fruits and vegetables* from *uploaded images* 🖼️. The project includes a *FastAPI backend* ⚡ and a *user-friendly frontend* 🎨. I used *TensorFlow* 🤖 for *image classification*, enabling *accurate identification* of various *fruits and vegetables* based on the *uploaded images* 🍎🥕."
+              }
+            />
+            <Card
+              title={"TO-DO App"}
+              time={"Nov 2024"}
+              status={"Completed"}
+              thumbnailSrc={"todo.jpg"}
+              videoSrc={"todo.webm"}
+              website={"TODO-REACT"}
+              github={"TODO-REACT"}
+              frameworks={["React", "Tailwind CSS"]}
+              description={
+                "I built a *TO-DO app* 📝 while learning *React* ⚛️, which is my *first React application* 🎉. The app allows users to *take notes*, *mark them as completed* ✅, and *hide the marked ones* 👀. It also *stores the information locally* 💾, ensuring the *data persists* even when the *browser tab is closed* 🔄. This project gave me *hands-on experience* with *React* and *local storage*, enhancing my *understanding of state management* and *data persistence*."
+              }
+            />
+            <Card
+              title={"Shell Codes using Python"}
+              time={"Oct 2024"}
+              status={"On Hold"}
+              thumbnailSrc={"shellpy.jpg"}
+              videoSrc={"shellpy.webm"}
+              website={""}
+              github={"shellpy"}
+              frameworks={["Python", "Shell Scripting"]}
+              description={
+                "*ShellPy* 🐍 is a *repository* where *Python meets shell scripting* 🖥️, designed to *simplify tasks* like *managing directories* and *files* 📂. The main script, *dirgen* 🏗️, allows users to *create directory and file structures* using an *easy Emmet-like syntax* ✨. By adding the *repository to your PATH*, you can use the *dirgen command* in your *terminal* 🖥️ to *generate file structures* with ease. The project is designed to make *shell scripting* more *efficient* and *fun* 🎉, with plans for *future Python scripts* 🐍 to further *enhance your shell scripting experience*."
+              }
+            />
+            <Card
+              title={"Web Development Skill Lab Codes"}
+              time={"Aug 2024"}
+              status={"Completed"}
+              thumbnailSrc={"hybridWebdev.jpg"}
+              videoSrc={"skillLab.webm"}
+              website={"Skill-Lab-Hybrid-Web-Dev"}
+              github={"Skill-Lab-Hybrid-Web-Dev"}
+              frameworks={["HTML", "CSS", "JavaScript"]}
+              description={
+                "This repository contains the work I have completed as part of the *Hybrid Web Development* 🌐 program offered by my *college* 🎓. The program is structured in a *day-by-day format* 📆, with specific *tasks, exercises, and assignments* to be completed *each day* 🏗️."
+              }
+            />
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="flex items-center gap-2 px-4 py-2 w-fit rounded-md border border-input bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            >
+              Show Less <FiChevronUp className="text-lg" />
+            </button>
+          </>
+        ) : (
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="flex items-center gap-2 px-4 py-2 w-fit rounded-md border border-input bg-muted text-muted-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          >
+            View All Projects <FiChevronDown className="text-lg" />{" "}
+          </button>
+        )}
       </div>
     </div>
   );

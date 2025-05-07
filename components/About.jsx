@@ -3,7 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <div className="flex flex-col my-8">
-      <h2 className="font-bold text-xl">Meet the Builder</h2>
+      <h2 className="text-2xl font-bold text-foreground mb-4 flex-1">
+      Meet the Builder</h2>
       <p className="text-muted-foreground text">
   I'm a passionate <span className="text-muted-foreground font-bold">web developer</span> who loves turning ideas into functional,
   user-friendly applications. From crafting sleek <span className="text-muted-foreground font-bold">weather apps</span> to

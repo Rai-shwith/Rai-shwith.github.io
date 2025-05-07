@@ -6,7 +6,8 @@ const Education = () => {
 	return (
 		<div className="flex min-h-0 flex-col gap-y-3 relative">
 				<div className="w-2 h-3/5 top-1/4 bottom-1/4 bg-card-foreground absolute ml-5 "></div>
-			<h2 className="text-xl font-bold relative">Knowledge Base</h2>
+				<h2 className="text-2xl font-bold text-foreground mb-4 flex-1">
+				Knowledge Base</h2>
 			<div className="flex flex-col space-y-5">
 				<Link
 					className="block cursor-pointer"
